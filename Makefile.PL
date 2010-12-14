@@ -1,6 +1,5 @@
 use inc::Module::Install 0.46;
-name('Jifty-Plugin-EmailErrors');
-version_from('lib/Jifty/Plugin/EmailErrors.pm');
+all_from('lib/Jifty/Plugin/EmailErrors.pm');
 
 requires('Jifty' => 1.00506 );
 

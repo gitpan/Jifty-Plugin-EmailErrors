@@ -1,10 +1,11 @@
+use 5.008001;
 use strict;
 use warnings;
 
 package Jifty::Plugin::EmailErrors;
 use base qw/Jifty::Plugin/;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -41,6 +42,12 @@ sub init {
     $Jifty::Plugin::EmailErrors::Notification::EmailError::FROM = $args{from} || 'nobody@localhost';
     $Jifty::Plugin::EmailErrors::Notification::EmailError::SUBJECT = $args{subject} || 'Jifty error';
 }
+
+=head1 AUTHORS
+
+Alex Vandiver C<alexmv@bestpractical.com>
+
+Shawn M Moore C<sartak@bestpractical.com>
 
 =head1 COPYRIGHT AND LICENSE
 
